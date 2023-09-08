@@ -15,4 +15,7 @@
 - Uma OS pode ter vários tipos de peça e uma peça pode estar presente em mais de uma OS.
 
 ## Objetivo:
-- [ ] Cria o esquema conceitual para o contexto de oficina com base na narrativa fornecida
+- [x] Cria o esquema conceitual para o contexto de oficina com base na narrativa fornecida
+
+## Diagrama EER:
+ <img title="Diagrama EER" alt="Diagrama EER" src="diagrama-EER.png">
