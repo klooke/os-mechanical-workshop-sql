@@ -23,7 +23,7 @@ CREATE TABLE Mecanico (
 );
 
 CREATE TABLE Veiculo (
-	Placa char(6) NOT NULL UNIQUE,
+	Placa char(8) NOT NULL UNIQUE,
     IdCliente int,
     Tipo enum("Moto", "Caminhão", "Carro", "Bicicleta") NOT NULL,
     Marca varchar(45) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE Veiculo (
 
 CREATE TABLE OrdemServico (
 	ID int NOT NULL AUTO_INCREMENT,
-    PlacaVeiculo char(6),
+    PlacaVeiculo char(8),
     DescricaoProblema varchar(255) NOT NULL,
     Status enum("Entrada", "Em análise", "Arguardando autorização", "Autorizado", "Arguardando retirada", "Concluído") NOT NULL DEFAULT "Entrada",
     DataEntrada date NOT NULL,
