@@ -21,11 +21,22 @@
  <img title="Diagrama EER" alt="Diagrama EER" src="diagrama-EER.png">
 
 ## Objetivo do desafio #2 (Modelagem Física):
-- [ ] Recuperações simples com SELECT Statement
-- [ ] Filtros com WHERE Statement
-- [ ] Crie expressões para gerar atributos derivados
-- [ ] Defina ordenações dos dados com ORDER BY
-- [ ] Condições de filtros aos grupos – HAVING Statement
-- [ ] Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados
+- [x] Recuperações simples com SELECT Statement
+- [x] Filtros com WHERE Statement
+- [x] Crie expressões para gerar atributos derivados
+- [x] Defina ordenações dos dados com ORDER BY
+- [x] Condições de filtros aos grupos – HAVING Statement
+- [x] Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados
 
-### Querys:
+### Lista de querys (SELECT):
+- Todos os cadastros (ORDER BY).
+- Todos os mecânicos que já trabalharam na oficina em ordem de contratação (JOIN e ORDER BY).
+- Todos os mecânicos que estão trabalhando na oficina em ordem de contratação (JOIN, WHERE e ORDER BY).
+- Todos os veiculos cadastrados e seus donos (JOIN).
+- Todos os 'carros' e seus donos (JOIN e WHERE).
+- Todas as ordem de serviço ordenado, com a equipe de mecanicos (JOIN e GROUP BY).
+- Todas as ordem de serviços em aberto (JOIN e WHERE).
+- Todos os serviços, solicitações e valor final da OS (JOIN, GROUP BY e ORDER BY).
+- Todos os veículos que tiveram um gasto maior que 1000 em todos as OS (SUBQUERY, JOIN, GROUP BY, HAVING e ORDER BY).
+- Lista de mecânicos com seu bônus ordenado (SUBQUERY, JOIN, GROUP BY e ORDER BY).
+- Todo o estoque de peças.
